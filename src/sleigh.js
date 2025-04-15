@@ -476,7 +476,7 @@ export function addAnimatedSleigh(scene) {
   const radius = 6; // Circular path radius
   let angle = 0;
   const speed = 0.005; // Rotation speed
-  const minHeight = 0.02, maxHeight = 4.5; // Height limits
+  const minHeight = 0.02, maxHeight = 3.5; // Height limits
 
   function animateSleigh() {
     // Update circular movement
