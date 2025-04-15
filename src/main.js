@@ -27,7 +27,7 @@ directionalLight2.position.set(-10, 10, 20);
 scene.add(directionalLight2);
 
 //set bg music
-//addBackgroundMusic(scene, 'assests/jingle-bells.mp3');
+addBackgroundMusic(scene, 'assests/jingle-bells.mp3');
 
 // Set up camera
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -76,7 +76,7 @@ skybox.load().then(() => {
     controls.dampingFactor = 0.05;
     controls.enableZoom = true;
     controls.minDistance = 3;  // Prevent zooming too close
-    controls.maxDistance = 20; // Prevent zooming too far out
+    controls.maxDistance = 10; // Prevent zooming too far out
     controls.maxPolarAngle = Math.PI / 2.1;  // Prevents looking below the horizon
     
     // Resize handling
