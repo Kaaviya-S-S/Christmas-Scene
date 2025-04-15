@@ -5,7 +5,7 @@ export function loadSanta(scene) {
     const loader = new GLTFLoader();
     
     loader.load(
-        "assets/jolly_santa.glb",  // Ensure the path to the .glb file is correct
+        "public/assets/jolly_santa.glb",  // Ensure the path to the .glb file is correct
         function (gltf) {
             // Access the loaded model (the 'scene' property contains the glTF scene)
             const santa = gltf.scene;
