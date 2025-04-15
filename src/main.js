@@ -31,8 +31,8 @@ addBackgroundMusic(scene, 'assets/jingle-bells.mp3');
 
 // Set up camera
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-camera.position.set(-4, 4, 15);  // Adjust camera position slightly above
-camera.lookAt(0, 0, 0);
+camera.position.set(-4, 4, 12);  // Adjust camera position slightly above
+camera.lookAt(0, 2, 0);
 
 // Set up renderer
 const renderer = new THREE.WebGLRenderer({ antialias: true });
