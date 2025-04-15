@@ -27,7 +27,7 @@ directionalLight2.position.set(-10, 10, 20);
 scene.add(directionalLight2);
 
 //set bg music
-addBackgroundMusic(scene, 'public/assets/jingle-bells.mp3');
+addBackgroundMusic(scene, 'assets/jingle-bells.mp3');
 
 // Set up camera
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
