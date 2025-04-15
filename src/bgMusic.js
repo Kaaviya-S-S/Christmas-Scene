@@ -19,7 +19,15 @@ export function addBackgroundMusic(scene, audioFilePath)
         sound.setBuffer(buffer);
         sound.setLoop(true);    // Set the music to loop
         sound.setVolume(1);     // Adjust volume (range is 0.0 to 1.0)
-        sound.play();           // Start playing the background music
+
+        // Function to start playing the music when the user clicks
+        function playMusicOnClick() {
+            sound.play();  // Start playing the background music
+            document.removeEventListener("click", playMusicOnClick);  // Remove the event listener after the first click
+        }
+        // Add a click event listener to start playing the music
+        document.addEventListener("click", playMusicOnClick);
+        
     }, undefined, function (error) {
         console.error("Error loading audio:", error);
     });
