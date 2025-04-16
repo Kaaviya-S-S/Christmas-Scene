@@ -76,7 +76,7 @@ skybox.load().then(() => {
     controls.dampingFactor = 0.05;
     controls.enableZoom = true;
     controls.minDistance = 3;    // Prevent zooming too close
-    controls.maxDistance = 10.5; // Prevent zooming too far out
+    controls.maxDistance = 10; // Prevent zooming too far out
     controls.maxPolarAngle = Math.PI / 2.1;  // Prevents looking below the horizon
     
     // Resize handling
