@@ -60,7 +60,7 @@ export function createSleigh() {
   sleighBack.position.set(-1, 0.6, 0);
   sleighGroup.add(sleighBack);
   
-  // Gold trim - fixed height to be visible
+  // Gold trim 
   const trimGeometry = new THREE.BoxGeometry(2, 0.1, 1.5);
   const trim = new THREE.Mesh(trimGeometry, goldMaterial);
   trim.position.y = 0.8;
@@ -96,8 +96,7 @@ export function createSleigh() {
 function addSantaSack(sleighGroup, sackMaterial, furMaterial, ribbonMaterial) {
   const santaSackGroup = new THREE.Group();
   
-  // Create the main sack body - bulging in the middle like in the image
-  // Use a custom geometry with more resolution for better shape
+  // Create the main sack body 
   const sackShape = new THREE.Shape();
   sackShape.moveTo(-0.8, 0);
   sackShape.bezierCurveTo(-0.9, 0.4, -1.0, 0.8, -0.8, 1.2); // Left side curve
@@ -107,10 +106,10 @@ function addSantaSack(sleighGroup, sackMaterial, furMaterial, ribbonMaterial) {
   
   // Create the 3D sack by revolving the shape
   const sackGeometry = new THREE.LatheGeometry(
-    sackShape.getPoints(20), // Get points from the shape
-    7, // Segments around
-    0, // Start angle
-    Math.PI * 2 // End angle (full circle)
+    sackShape.getPoints(20),  // Get points from the shape
+    7,                        // Segments around
+    0,                        // Start angle
+    Math.PI * 2               // End angle (full circle)
   );
   
   const sack = new THREE.Mesh(sackGeometry, sackMaterial);
@@ -242,7 +241,6 @@ function createReindeer(bodyMaterial, legMaterial, neckMaterial, antlerMaterial,
   reindeer.add(body);
   
   // Neck - connecting properly to the head
-  // Use a curved geometries to ensure smooth connection
   const neckCurve = new THREE.CatmullRomCurve3([
     new THREE.Vector3(0.35, 0.7, 0),      // Start at body
     new THREE.Vector3(0.75, 0.85, 0),     // Middle point
@@ -356,7 +354,7 @@ function createReindeer(bodyMaterial, legMaterial, neckMaterial, antlerMaterial,
   return reindeer;
 }
 
-// Helper function to create a leg with joints
+// function to create a leg with joints
 function createLeg(reindeer, legmaterial, x, y, z) 
 {
 
@@ -381,7 +379,7 @@ function createLeg(reindeer, legmaterial, x, y, z)
   reindeer.add(hoof);
 }
 
-// Helper function to create detailed antlers
+// function to create detailed antlers
 function createAntlers(reindeer, material) {
   // Create a curved antler branch
   const createAntlerBranch = (x, y, z, length, radius, angleX, angleZ) => {
@@ -418,7 +416,7 @@ function createAntlers(reindeer, material) {
   createAntlerBranch(1, 1.5, -0.12, 0.15, 0.015, -0.3, Math.PI / 3);
 }
 
-// Add harness lines connecting sleigh to parallel reindeer
+// Add harness lines connecting sleigh
 function addHarnessLines(sleighGroup) {
   const harnessMaterial = new THREE.MeshBasicMaterial({ color: 0xFF0000 });
   
@@ -488,7 +486,7 @@ export function addAnimatedSleigh(scene) {
     sleigh.position.y = minHeight + (Math.sin(angle) * 0.5 + 0.5) * (maxHeight - minHeight);
 
     // Rotate the sleigh slowly (one full 360-degree rotation per revolution)
-    sleigh.rotation.y = -angle - Math.PI/2; // Offset by π to face correctly
+    sleigh.rotation.y = -angle - Math.PI/2;
 
     requestAnimationFrame(animateSleigh);
   }

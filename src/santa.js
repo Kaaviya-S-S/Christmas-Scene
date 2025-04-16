@@ -17,9 +17,8 @@ export function loadSanta(scene) {
             santa.position.set(-2.5, 0, 0);
             
             // Rotate Santa to face toward the camera/viewer
-            santa.rotation.y = Math.PI * 2; // This will make Santa face more toward the camera
+            santa.rotation.y = Math.PI * 2; 
             
-            // Try to adjust Santa's appearance if possible
             // Some GLTF models allow for material adjustments
             santa.traverse((child) => {
                 if (child.isMesh) {
@@ -36,7 +35,6 @@ export function loadSanta(scene) {
                 }
             });
             
-            // Add the model to the scene
             scene.add(santa);
             console.log("added success");
         },

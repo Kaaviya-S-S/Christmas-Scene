@@ -52,8 +52,8 @@ skybox.load().then(() => {
     scene.add(gifts);
     scene.add(church);
 
-    // Load and position Santa to the left of the Christmas tree
-    loadSanta(scene); // This will load the Santa model into the scene
+    // Load and position Santa 
+    loadSanta(scene); 
     
     // Add house and gifts
     addHouseAndGifts(scene);
@@ -65,7 +65,7 @@ skybox.load().then(() => {
     addAnimatedSleigh(scene);
     
     // Add decorative boundary around the snow land
-    addBoundary(scene, 20); // 20 is the size of the ground plane, adjust if needed
+    addBoundary(scene, 20); 
     
     // Add Snow Effect
     addSnow(scene);
@@ -75,7 +75,7 @@ skybox.load().then(() => {
     controls.enableDamping = true;
     controls.dampingFactor = 0.05;
     controls.enableZoom = true;
-    controls.minDistance = 3;  // Prevent zooming too close
+    controls.minDistance = 3;    // Prevent zooming too close
     controls.maxDistance = 10.5; // Prevent zooming too far out
     controls.maxPolarAngle = Math.PI / 2.1;  // Prevents looking below the horizon
     

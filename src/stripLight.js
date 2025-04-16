@@ -6,9 +6,9 @@ function createStripLight()
     // Create a curve for the spiral path
     const curve = new THREE.Curve();
     curve.getPoint = function (t) {
-        const angle = Math.PI * 8.5 * t; // Adjust for spiral rotations
-        const radius = 0.75 - (t * 0.25); // Spiral radius
-        const height = t * 2 - 0.35; // Height matches tree's height
+        const angle = Math.PI * 8.5 * t;   // Adjust for spiral rotations
+        const radius = 0.75 - (t * 0.25);  // Spiral radius
+        const height = t * 2 - 0.35;       // Height matches tree's height
         return new THREE.Vector3(
             Math.cos(angle) * radius,
             height,
@@ -21,9 +21,9 @@ function createStripLight()
 
     // Create material with emissive glow
     const stripMaterial = new THREE.MeshStandardMaterial({
-        color: 0xffd700, // Golden color for festive glow
-        emissive: 0xffd700, // Glow color
-        emissiveIntensity: 20, // Strong glow effect
+        color: 0xffd700,        // Golden color 
+        emissive: 0xffd700,     // Glow color
+        emissiveIntensity: 20,  // Strong glow effect
     });
 
     // Create mesh

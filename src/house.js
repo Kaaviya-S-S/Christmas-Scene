@@ -79,7 +79,7 @@ function createEnhancedLights()
     addWindowLights(-1.2, 1.05);
     addWindowLights(1.2, 1.05);
     
-    // Door and chimney lights have been removed as requested
+
     // Enhanced animation for the lights
     function animateLights() {
         const time = Date.now() * 0.003;
@@ -123,7 +123,7 @@ function createLight(color = 0xFFFFFF) {
     return new THREE.Mesh(lightGeometry, lightMaterial);
 }
 
-// Create a house that matches the reference image with simple geometric shapes
+// Create a house 
 function createHouse() {
     const houseGroup = new THREE.Group();
     
@@ -136,14 +136,12 @@ function createHouse() {
     // Create a simple triangular roof
     const roofMaterial = new THREE.MeshStandardMaterial({
         color: 0x3E2723, // Dark brown
-        //color: 0xffffff, // white
         side: THREE.DoubleSide
     });
     
-    // Create a simple triangular roof - carefully align all sides
+    // triangular roof group
     const roofGroup = new THREE.Group();
     
-    // Ensure all faces share exact coordinates so they align perfectly
     const roofHeight = 1.5;
     const roofWidth = 4.4;
     const roofDepth = 2.4;
@@ -279,8 +277,9 @@ function createHouse() {
     const wreath = new THREE.Mesh(wreathGeometry, wreathMaterial);
     wreath.position.set(0, 1.5, 1.02); // Above the door
     
-    // Add Christmas lights along the roof edges
+    // Add Christmas lights along the roof edges and windows
     const lightsGroup = new THREE.Group();
+
     // Add lights along the front bottom edge of the roof
     for (let i = 0; i < 20; i++) {
         const light = createLight();
@@ -348,7 +347,7 @@ export const house = createHouse();
 export function addHouseAndGifts(scene) {
     // Position the house
     house.position.set(3, 0, -2.5);
-    house.scale.set(0.7, 0.7, 0.7); // Reduced scale to make house smaller (50% of original size)
+    house.scale.set(0.7, 0.7, 0.7);  // Reduced scale to make house smaller
     house.rotation.y = -Math.PI / 6; // Slight rotation to show more of the side
     
     // Add to scene

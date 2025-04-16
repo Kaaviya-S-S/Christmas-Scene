@@ -22,8 +22,8 @@ export function addBackgroundMusic(scene, audioFilePath)
 
         // Function to start playing the music when the user clicks
         function playMusicOnClick() {
-            sound.play();  // Start playing the background music
-            document.removeEventListener("click", playMusicOnClick);  // Remove the event listener after the first click
+            sound.play();                                              // Start playing the background music
+            document.removeEventListener("click", playMusicOnClick);   // Remove the event listener after the first click
         }
         // Add a click event listener to start playing the music
         document.addEventListener("click", playMusicOnClick);

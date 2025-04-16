@@ -13,7 +13,7 @@ export function addBallsToLayer(layer, baseHeight, j, treeGroup)
         const Color = colors[Math.floor(Math.random() * colors.length)]; // Randomly select a color
         const ballMaterial = new THREE.MeshStandardMaterial({
             color: Color,
-            emissive: Color,          // Same color for emissiveness
+            emissive: Color,           // Same color for emissiveness
             emissiveIntensity: 0.5,    // Increase this value for stronger glow
         });
         const ball = new THREE.Mesh(new THREE.SphereGeometry(0.07, 8, 8), ballMaterial);
