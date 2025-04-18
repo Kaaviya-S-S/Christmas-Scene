@@ -58,5 +58,5 @@ http://localhost:5173/
 ```
 ---
 
-**📜 License**  
+## **📜 License**  
 ⚖️ This project is licensed under the MIT License – Feel free to explore, modify, and enhance!
