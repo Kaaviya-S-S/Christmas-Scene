@@ -30,7 +30,6 @@ An interactive and immersive **3D Christmas scene** built using **Three.js**, ca
 - **WebGL** – For real-time graphics in the browser
 - **JavaScript** – Scripting and logic
 - **GLTF Models** – Used for 3D models like Santa Claus
-- **HTML/CSS** – Basic webpage structure and styling
 - **Vite** – For fast development and bundling  
 - **VS Code** – Preferred code editor (or any web-based IDE) 
 
