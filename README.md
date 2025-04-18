@@ -31,14 +31,34 @@ An interactive and immersive **3D Christmas scene** built using **Three.js**, ca
 - **JavaScript** – Scripting and logic
 - **GLTF Models** – Used for 3D models like Santa Claus
 - **HTML/CSS** – Basic webpage structure and styling
+- **Vite** – For fast development and bundling  
 - **VS Code** – Preferred code editor (or any web-based IDE) 
 
 ---
 
 ## 🚀 How to Run Locally
-### 1. Clone the Repository
+### 🔗 1. Clone this Repository
 ```bash
-git clone https://github.com/Kaaviya-S-S/the-christmas-scene.git
+git clone https://github.com/Kaaviya-S-S/Christmas-Scene.git
+```
+### 📁 2. Navigate to the Project Directory
+```bash
+cd Christmas-Scene
+```
+### 🔧 3. Install Dependencies (if needed)
+```bash
+npm install
+```
+### 🖥️ 4. Run the development server
+```bash
+npm rundev
+```
+### 🌐 5. Open in browser
+```bash
+http://localhost:5173/
+```
+
+
 
 ---
 ## 📜 License  
