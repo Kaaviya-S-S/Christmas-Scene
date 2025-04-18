@@ -4,7 +4,7 @@ Deployed Link --> https://the-christmas-scene.vercel.app/
 An interactive and immersive 3D Christmas scene built using **Three.js**, capturing the spirit of the holidays through rich visuals, animation, and festive sound delivering a heartwarming, browser-based winter wonderland experience.  
 
 ## 🌟 Features  
-### ✨Visual Elements & Environment  
+#### ✨Visual Elements & Environment  
 🎄 Decorated **Christmas tree**  
 🛷 Animated **sleigh** and 🎅🏻 **Santa Clause**
 ☃️ **Snowman**, ⛪ **church**, 🏠 **house**, 🍭 **candy canes**, and 🎁 scattered **gifts**   
@@ -13,7 +13,7 @@ An interactive and immersive 3D Christmas scene built using **Three.js**, captur
 🕹️ **OrbitControls** for interactive camera movement  
 💡 **Ambient and Directional Lighting** to simulate a peaceful winter night scene  
 
-### 🔊 Audio Integration  
+#### 🔊 Audio Integration  
 🎶 Plays **“Jingle Bells”** in the background when the user clicks anywhere on the scene enhancing immersive and festive cheer  
 
 ## 📜 License  
