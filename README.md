@@ -36,27 +36,27 @@ An interactive and immersive **3D Christmas scene** built using **Three.js**, ca
 ---
 
 ## 🚀 How to Run Locally
-### 🔗 1. Clone this Repository
+#### 🔗 1. Clone this Repository
 ```bash
 git clone https://github.com/Kaaviya-S-S/Christmas-Scene.git
 ```
-### 📁 2. Navigate to the Project Directory
+#### 📁 2. Navigate to the Project Directory
 ```bash
 cd Christmas-Scene
 ```
-### 🔧 3. Install Dependencies (if needed)
+#### 🔧 3. Install Dependencies (if needed)
 ```bash
 npm install
 ```
-### 🖥️ 4. Run the development server
+#### 🖥️ 4. Run the development server
 ```bash
 npm rundev
 ```
-### 🌐 5. Open in browser
+#### 🌐 5. Open in browser
 ```bash
 http://localhost:5173/
 ```
-
 ---
-### 📜 License  
+
+**📜 License**  
 ⚖️ This project is licensed under the MIT License – Feel free to explore, modify, and enhance!
