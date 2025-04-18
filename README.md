@@ -1,39 +1,45 @@
-# 🎄 Christmas Scene - Three.js
-Deployed Link --> https://the-christmas-scene.vercel.app/  
+# 🎄🎅🏻 Christmas Scene - Three.js
+🔗 **Live Demo**: https://the-christmas-scene.vercel.app/  
 
-An interactive and immersive 3D Christmas scene built using **Three.js**, capturing the spirit of the holidays through rich visuals, animation, and festive sound delivering a heartwarming, browser-based winter wonderland experience.  
+An interactive and immersive **3D Christmas scene** built using **Three.js**, capturing the spirit of the holidays through rich visuals, animation, and festive sound delivering a heartwarming, browser-based winter wonderland experience.  
 
 ---
 
 ## 🌟 Features  
 ### ✨Visual Elements & Environment  
-🎄 Decorated **Christmas tree**  
-🛷 Animated **sleigh** and 🎅🏻 **Santa Clause**
-☃️ **Snowman**, ⛪ **church**, 🏠 **house**, 🍭 **candy canes**, and 🎁 scattered **gifts**   
-❄️ Gentle **snow fall** animation to create a winter ambiance  
-🌌 Skybox Loader for a realistic **stary night sky**  
-🕹️ **OrbitControls** for interactive camera movement  
-💡 **Ambient and Directional Lighting** to simulate a peaceful winter night scene  
+- 🎄 Decorated **Christmas tree**  
+- 🛷 Animated **sleigh** and 🎅🏻 **Santa Clause**
+- ☃️ **Snowman**, ⛪ **church**, 🏠 **house**, 🍭 **candy canes**, and 🎁 scattered **gifts**   
+- ❄️ Gentle **snowfall** animation for a cozy winter ambiance  
+- 🌌 A realistic **starry night sky**  
+- 🕹️ **OrbitControls** for interactive camera navigation  
+- 💡 **Ambient and Directional Lighting** to recreate a peaceful winter night scene  
 
 ### 🔊 Audio Integration  
-🎶 Plays **“Jingle Bells”** in the background when the user clicks anywhere on the scene enhancing immersive and festive cheer  
+- 🎶 Plays **“Jingle Bells”** in the background when the user clicks anywhere on the scene enhancing immersive and festive cheer  
 
 ### 🧩 Modular Architecture
-- All scene components (tree, sleigh, Santa, etc.) are built as **independent, reusable modules**
-- Promotes clean structure and easy scalability
+- Each scene component (tree, sleigh, Santa, etc.) is built as an **independent, reusable module**
+- Ensures clean code, better maintainability, and scalability  
 
 ---
 
+## 🛠️ Tech Stack
+
+- **Three.js** – Core 3D rendering engine
+- **WebGL** – For real-time graphics in the browser
+- **JavaScript** – Scripting and logic
+- **GLTF Models** – Used for 3D models like Santa Claus
+- **HTML/CSS** – Basic webpage structure and styling
+- **VS Code** – Preferred code editor (or any web-based IDE) 
+
 ---
 
-## 🚀 Technologies Used
-
-- [Three.js](https://threejs.org/) - JavaScript 3D Library
-- HTML5, CSS3, JavaScript
-- WebGL for hardware-accelerated 3D graphics
-- VS Code or any web-based IDE for development
+## 🚀 How to Run Locally
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Kaaviya-S-S/the-christmas-scene.git
 
 ---
-
 ## 📜 License  
 ⚖️ This project is licensed under the MIT License – Feel free to explore, modify, and enhance!
