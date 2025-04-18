@@ -8,7 +8,7 @@ An interactive and immersive **3D Christmas scene** built using **Three.js**, ca
 ## 🌟 Features  
 ### ✨Visual Elements & Environment  
 - 🎄 Decorated **Christmas tree**  
-- 🛷 Animated **sleigh** and 🎅🏻 **Santa Clause**
+- 🛷 Animated **sleigh** and 🎅🏻 **Santa Claus**
 - ☃️ **Snowman**, ⛪ **church**, 🏠 **house**, 🍭 **candy canes**, and 🎁 scattered **gifts**   
 - ❄️ Gentle **snowfall** animation for a cozy winter ambiance  
 - 🌌 A realistic **starry night sky**  
